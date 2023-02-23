@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-background: #222;;
+$blocks: #161515;
+$background: #000;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+a {
+  text-decoration: none;
+  color: #686868;
+}
+
+a:hover {
+  color: #8bc53e;
+}
+
+a.active {
+  color: #009245;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 192rem;
+  margin: auto;
+  box-sizing: border-box;
+  color: rgb(155, 130, 130);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  background-color: $background;
+
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 4.8rem 46.8rem 24.9rem repeat(4, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 192rem) [col-end]) [center-end] 1fr [full-end];
+  background-color: $primary-background;
+}
+
+.heading-1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  //color: #009245;
+}
+
+.heading-4 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  //color: #009245;
+}
+
+.heading-5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  //color: #009245;
+}

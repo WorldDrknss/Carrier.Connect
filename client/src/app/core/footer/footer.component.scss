@@ -1,0 +1,98 @@
+$primary-background: #222;;
+$blocks: #161515;
+$background: #000;
+
+:host {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 192rem) [col-end]) [center-end] 1fr [full-end];
+  background-color: $primary-background;
+}
+
+.footer {
+  //padding: 2.4rem;
+  grid-column: full-start / full-end;
+  background: #160d0d;
+  padding: 5rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.4rem;
+
+  & .highlight {
+      color: #009245;
+  }
+
+  & .space {
+      margin: 2rem 0;
+  }
+}
+
+
+
+.footer-left {
+  padding: 0 2.4rem;
+
+}
+
+.footer ul {
+  display: block;
+  //padding: 1rem;
+}
+
+.footer-right li {
+  list-style-type: none;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  padding: .5rem;
+  margin: .5rem;
+  width: 100%;
+  line-height: 2.5rem;
+
+  & a::before {
+      font-family: "Font Awesome 5 Free"; font-weight: 900;
+      content: "\f105";
+      float: right;
+  }
+
+  &:last-child {
+      border-bottom: none;
+  }
+}
+
+.footer-center {
+  padding: 0 2.4rem;
+  border-left: 1px solid rgba(255,255,255,.1);
+}
+
+.footer-center li {
+  list-style-type: none;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  padding: .5rem;
+  margin: .5rem;
+  width: 100%;
+  line-height: 2.5rem;
+
+  & a::before {
+      font-family: "Font Awesome 5 Free"; font-weight: 900;
+      content: "\f105";
+      float: right;
+  }
+
+  &:last-child {
+      border-bottom: none;
+  }
+}
+
+.copyright {
+  background-color: #292929;
+  color: #686868;
+  grid-column: full-start / full-end;
+  text-align: center;
+  padding: 2.4rem;
+}
+
+.footer-right {
+  padding: 0 2.4rem;
+  border-left: 1px solid rgba(255,255,255,.1);
+
+}
