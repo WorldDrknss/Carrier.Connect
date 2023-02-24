@@ -1,4 +1,11 @@
-$primary-background: #222;;
+/*
+Background: #2A403D
+Active Text: #c3cbd6
+Text: #D05663
+Blocks: #748b6f
+*/
+
+$primary-background: #6096B4;
 $blocks: #161515;
 $background: #000;
 
@@ -13,15 +20,15 @@ $background: #000;
 
 a {
   text-decoration: none;
-  color: #686868;
+  color: #c3cbd6;
 }
 
 a:hover {
-  color: #8bc53e;
+  color: #EEE9DA;
 }
 
 a.active {
-  color: #009245;
+  color: #D05663;
 }
 
 html {
@@ -32,7 +39,7 @@ body {
   max-width: 192rem;
   margin: auto;
   box-sizing: border-box;
-  color: rgb(155, 130, 130);
+  color: #c3cbd6;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;

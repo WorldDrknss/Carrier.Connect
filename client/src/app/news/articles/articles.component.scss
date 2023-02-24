@@ -1,0 +1,122 @@
+/*
+Background: #2A403D
+Active Text: #c3cbd6
+Text: #D05663
+Blocks: #748b6f
+*/
+
+$primary-background: #2A403D;
+$blocks: #161515;
+$background: #000;
+
+:host {
+  display: grid;
+  grid-template-rows: 45rem repeat(4, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 192rem) [col-end]) [center-end] 1fr [full-end];
+  background-color: $primary-background;
+}
+
+.page-header {
+  grid-column: full-start / full-end;
+  background: #222222;
+  box-shadow: 0px 2px 0px 0px #00000010;
+  position: relative;
+
+  & img {
+      object-fit: cover;
+      object-position: top left;
+      width: 100%;
+      height: 100%;
+      // padding: 2.4rem;
+  }
+
+  &--featured {
+      position: absolute;
+      bottom: 2.4rem;
+      left: 2.4rem;
+      width: 75%;
+
+      & h3, p, span {
+          padding: 0 2.4rem 2.4rem 2.4rem;
+          font-weight: 400;
+          text-shadow: 0px 5px 4px #00000010;
+      }
+    }
+}
+
+.page-container {
+  grid-column: full-start / col-end 6;
+  background: #748b6f;
+  box-shadow: 0px 2px 0px 0px #00000010;
+  //border-right: 1px solid #fff;
+  padding: 2.4rem;
+
+  .heading-1 {
+      color: #c3cbd6;
+      margin-bottom: 1rem;
+  }
+
+  & span {
+      color:#2A403D;
+      margin-bottom: 1rem;
+      font-weight: 500;
+  }
+
+  & p {
+      padding: .5rem 0;
+      font-size: 1.4rem;
+  }
+
+  & img {
+      width: 100%;
+      padding: 2.4rem 0;
+  }
+
+  & .img-left {
+      width: 58rem;
+      float: left;
+      padding: 2.4rem 2.4rem 2.4rem 0;
+  }
+
+  & .img-right {
+      width: 58rem;
+      float: right;
+      padding: 2.4rem 0 2.4rem 2.4rem;
+  }
+}
+
+.sub-navigation {
+  grid-column: col-start 7 / full-end;
+  background: #161515;
+  padding: 2.4rem;
+
+  box-shadow: 0px 2px 0px 0px #00000029;
+  //display: grid;
+  //grid-template-rows: repeat(2, minmax(min-content, 19.9rem));
+  //grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  //grid-gap: 2.4rem;
+
+  & li {
+      list-style-type: none;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      padding: .5rem;
+      margin: .5rem;
+      width: 100%;
+      line-height: 2.5rem;
+
+      & a::before {
+          font-family: "Font Awesome 5 Free"; font-weight: 900;
+          content: "\f105";
+          float: right;
+      }
+
+      &:last-child {
+          border-bottom: none;
+      }
+  }
+
+  & .sub-link {
+      margin-bottom: 1rem;
+      //margin: 2.4rem 0;
+  }
+}

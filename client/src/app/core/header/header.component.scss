@@ -1,16 +1,15 @@
-$primary-background: #222;;
+$primary-background: #6096B4;
 $blocks: #161515;
 $background: #000;
 
 :host {
   display: grid;
-  grid-template-rows: 4.8rem 46.8rem;
+  grid-template-rows: 4.8rem;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 192rem) [col-end]) [center-end] 1fr [full-end];
   background-color: $primary-background;
 }
 
 .navigation {
-  position: sticky;
   top: 0;
   z-index: 20;
   grid-column: full-start / full-end;
@@ -64,7 +63,12 @@ $background: #000;
 
 .header {
   grid-column: full-start / full-end;
-  background: #222222;
+  // truck-2677373.jpg
+  background: linear-gradient(45deg,
+  rgba(0, 0, 0, 0.75),
+  rgba(0, 128, 255, 0.25)), url('/assets/images/truck-2677373.jpg') bottom right no-repeat;
+  background-size: cover;
+  // background: #93BFCF;
   box-shadow: 0px 2px 0px 0px #00000010;
   position: relative;
 
@@ -77,9 +81,9 @@ $background: #000;
 
   &--featured {
       position: absolute;
-      bottom: 2.4rem;
-      left: 2.4rem;
-      width: 75%;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
       & h3, p, span {
           padding: 0 2.4rem 2.4rem 2.4rem;

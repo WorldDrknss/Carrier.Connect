@@ -1,0 +1,111 @@
+/*
+Background: #2A403D
+Active Text: #c3cbd6
+Text: #D05663
+Blocks: #748b6f
+*/
+
+$primary-background: #2A403D;
+$blocks: #161515;
+$background: #000;
+
+:host {
+  display: grid;
+  grid-template-rows: 45rem repeat(4, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 192rem) [col-end]) [center-end] 1fr [full-end];
+  background-color: $primary-background;
+}
+
+.header {
+  grid-column: full-start / full-end;
+  // truck-2677373.jpg
+  background: linear-gradient(45deg,
+  rgba(0, 0, 0, 0.75),
+  rgba(0, 128, 255, 0.25)), url('/assets/images/truck-2677373.jpg') bottom right no-repeat;
+  background-size: cover;
+  // background: #93BFCF;
+  box-shadow: 0px 2px 0px 0px #00000010;
+  position:relative;
+
+  & img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      padding: 2.4rem;
+  }
+
+  &--featured {
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      flex-direction: column;
+      height: 45rem;
+
+      & h3, p, span {
+          padding: 0 2.4rem 2.4rem 2.4rem;
+          font-weight: 400;
+          text-shadow: 0px 5px 4px #00000010;
+          font-size: 100px;
+      }
+    }
+}
+
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 2.4rem;
+  grid-column-gap: 2.5rem;
+}
+
+.blog {
+  grid-column: center-start / center-end;
+  padding: 2.4rem;
+  //margin: 0 15rem;
+  box-shadow: 0px 2px 4px 0px #00000010;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+
+  & img {
+      object-fit: cover;
+      width: 15rem;
+      height: 15rem;
+      box-shadow: 4px 4px 4px 4px #00000010;
+  }
+
+  & .icon {
+      grid-row: 1 / span 3;
+  }
+
+  & .readmore {
+
+      text-align: right;
+      color: #686868;
+
+      & a::after {
+          font-family: "Font Awesome 5 Free"; font-weight: 900;
+          content: " \f105 \f105"
+      }
+  }
+
+
+  & p {
+      line-height: 1.6rem;
+  }
+
+  .heading-4 {
+      color: #c3cbd6;
+  }
+
+  .feature {
+      padding: 2.4rem;
+      background-color: #748b6f;
+      box-shadow: 0px 2px 0px 0px #00000010;
+  }
+}
+
+.featured-text {
+  font-size: 1.2rem;
+}
