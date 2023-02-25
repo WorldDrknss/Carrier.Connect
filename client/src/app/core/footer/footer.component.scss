@@ -1,3 +1,11 @@
+/*
+Background: #2A403D
+Active Text: #c3cbd6
+Text: #D05663
+Blocks: #748b6f
+*/
+
+
 $primary-background: #6096B4;
 $blocks: #161515;
 $background: #000;
@@ -12,7 +20,7 @@ $background: #000;
 .footer {
   //padding: 2.4rem;
   grid-column: full-start / full-end;
-  background: #160d0d;
+  background: #D05663;
   padding: 5rem;
 
   display: grid;

@@ -11,7 +11,7 @@ $background: #000;
 
 :host {
   display: grid;
-  grid-template-rows: 45rem repeat(4, min-content);
+  grid-template-rows: 30rem repeat(4, min-content);
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 192rem) [col-end]) [center-end] 1fr [full-end];
   background-color: $primary-background;
 }
@@ -21,7 +21,7 @@ $background: #000;
   // truck-2677373.jpg
   background: linear-gradient(45deg,
   rgba(0, 0, 0, 0.75),
-  rgba(0, 128, 255, 0.25)), url('/assets/images/truck-2677373.jpg') bottom right no-repeat;
+  rgba(255, 255, 255, 0.25)), url('/assets/images/news.jpg') bottom right no-repeat;
   background-size: cover;
   // background: #93BFCF;
   box-shadow: 0px 2px 0px 0px #00000010;
@@ -37,15 +37,15 @@ $background: #000;
   &--featured {
       display: flex;
       justify-content: center;
-      // align-items: center;
+      align-items: center;
       flex-direction: column;
-      height: 45rem;
+      height: 30rem;
 
       & h3, p, span {
           padding: 0 2.4rem 2.4rem 2.4rem;
           font-weight: 400;
           text-shadow: 0px 5px 4px #00000010;
-          font-size: 100px;
+          font-size: 50px;
       }
     }
 }
@@ -55,12 +55,12 @@ $background: #000;
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-row-gap: 2.4rem;
-  grid-column-gap: 2.5rem;
+  grid-column-gap: 2.4rem;
 }
 
 .blog {
   grid-column: center-start / center-end;
-  padding: 2.4rem;
+  padding: 1rem;
   //margin: 0 15rem;
   box-shadow: 0px 2px 4px 0px #00000010;
 
@@ -103,6 +103,7 @@ $background: #000;
       padding: 2.4rem;
       background-color: #748b6f;
       box-shadow: 0px 2px 0px 0px #00000010;
+      border-radius: 5px;
   }
 }
 

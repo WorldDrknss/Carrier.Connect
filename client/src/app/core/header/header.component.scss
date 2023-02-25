@@ -13,7 +13,7 @@ $background: #000;
   top: 0;
   z-index: 20;
   grid-column: full-start / full-end;
-  background: #0e0d0d 0% 0% no-repeat padding-box;
+  background: #292929 0% 0% no-repeat padding-box;
   box-shadow: 0px 5px 4px #00000029;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -65,7 +65,7 @@ $background: #000;
   grid-column: full-start / full-end;
   // truck-2677373.jpg
   background: linear-gradient(45deg,
-  rgba(0, 0, 0, 0.75),
+  rgba(0, 0, 0, 0.5),
   rgba(0, 128, 255, 0.25)), url('/assets/images/truck-2677373.jpg') bottom right no-repeat;
   background-size: cover;
   // background: #93BFCF;
