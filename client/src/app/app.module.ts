@@ -11,6 +11,8 @@ import { FooterComponent } from './core/footer/footer.component';
 import { HomeComponent } from './core/home/home.component';
 import { NewsComponent } from './news/news.component';
 import { ArticlesComponent } from './news/articles/articles.component';
+import { PartnersComponent } from './partners/partners.component';
+import { DriversComponent } from './drivers/drivers.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ArticlesComponent } from './news/articles/articles.component';
     FooterComponent,
     HomeComponent,
     NewsComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    PartnersComponent,
+    DriversComponent
   ],
   imports: [
     BrowserModule,

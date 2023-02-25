@@ -5,10 +5,10 @@
   </div>
   <div class="nav_right">
       <ul>
-          <li><a class="active" href="/home">Home</a></li>
-          <li><a href="/partners">Partners</a></li>
-          <li><a href="/drivers">Drivers</a></li>
-          <li><a href="/news">News</a></li>
+          <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+          <li><a [routerLink]="['/partners']" routerLinkActive="active">Partners</a></li>
+          <li><a [routerLink]="['/drivers']" routerLinkActive="active">Drivers</a></li>
+          <li><a [routerLink]="['/news']" routerLinkActive="active">News</a></li>
           <li><a href="/tools">Tools</a></li>
           <li><a href="/services">Services</a></li>
           <li><a href="/contact">Contact</a></li>
