@@ -169,11 +169,11 @@ $background: #000;
 .services {
   grid-column: center-start / center-end;
   padding: 2.4rem;
-  margin: 0 10rem;
+  margin: 0 5rem;
   // box-shadow: 0px 4px 0px 0px #00000050;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 10rem;
 
   & p {
@@ -191,7 +191,7 @@ $background: #000;
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-row-gap: 2.4rem;
-  grid-column-gap: 2.5rem;
+  grid-column-gap: 2.4rem;
 }
 
 .featured-text {
@@ -200,7 +200,7 @@ $background: #000;
 
 .icon {
   fill: #c3cbd6;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 8rem;
+  height: 8rem;
   grid-row: 1 / span 2;
 }

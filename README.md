@@ -16,3 +16,7 @@ The project was created using angular, c#, twilio, cohere, tauri
 ## What's next for CarrierConnect
 
 A fully functional mobile app would be our next move.
+
+![news](news.png)
+
+![articles](articles.png)
