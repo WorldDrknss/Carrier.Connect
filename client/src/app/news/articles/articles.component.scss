@@ -46,7 +46,7 @@ $background: #000;
 
 .page-container {
   grid-column: full-start / col-end 6;
-  background: #748b6f;
+  background: #292929;
   box-shadow: 0px 2px 0px 0px #00000010;
   //border-right: 1px solid #fff;
   padding: 2.4rem;
@@ -87,7 +87,7 @@ $background: #000;
 
 .sub-navigation {
   grid-column: col-start 7 / full-end;
-  background: #292929;
+  background: #748b6f;
   padding: 2.4rem;
 
   box-shadow: 0px 2px 0px 0px #00000029;
